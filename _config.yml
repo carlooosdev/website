@@ -1,0 +1,37 @@
+theme: jekyll-theme-cayman
+remote_theme: mmistakes/minimal-mistakes
+
+title: Carlos - Portfolio
+description: Carlos's portfolio website showcasing his projects and bio.
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      permalink: /:basename/:basename/
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  auto_ids: true
+
+exclude:
+  - README.md
+  - _config.yml
+  - .github
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+    layout: project
+    sort_by: date
+    order: reverse
+
+permalink: pretty
