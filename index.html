@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlos - Portfólio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f5f5f5;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #8a2be2;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .project {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .project h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      font-size: 16px;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #8a2be2;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .project a:hover {
+      background-color: #6c1d9c;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .project {
+        padding: 10px;
+      }
+      
+      .project h3 {
+        font-size: 20px;
+      }
+      
+      .project p {
+        font-size: 14px;
+      }
+      
+      .project a {
+        font-size: 14px;
+        padding: 5px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#biografia">Biografia</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="biografia">
+    <h2>Biografia</h2>
+    <p>Olá! Meu nome é Carlos, sou um garoto de 13 anos e tenho o sonho de me tornar um desenvolvedor Full-Stack.
+      Estudo constantemente e já tenho conhecimento em linguagens como HTML, CSS, JS, PHP, BASH, um pouco de C e até Python.
+    </p>
+  </section>
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="project">
+      <h3>2Auth Safer</h3>
+      <p>2Auth Safer é uma extensão em desenvolvimento para autenticação de códigos OTP/TOTP. Feito em HTML, CSS e principalmente JS.</p>
+      <a href="https://github.com/carlooosdev/2AuthSafer">Repositório - 2Auth Safer</a>
+    </div>
+    <div class="project">
+      <h3>Bashwords</h3>
+      <p>Bashwords é um gerenciador de senhas simples feito em BASH.</p>
+      <a href="https://github.com/carlooosdev/bashwords">Repositório - Bashwords</a>
+    </div>
+    <div class="project">
+      <h3>EasyPGP</h3>
+      <p>EasyPGP é um site simples feito em HTML, CSS e JS usando OpenPGP.js que ajuda a lidar com chaves PGP.</p>
+      <a href="https://github.com/carlooosdev/easypgp">Repositório - EasyPGP</a>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2024 Carlos Henrique</p>
+  </footer>
+</body>
+</html>
